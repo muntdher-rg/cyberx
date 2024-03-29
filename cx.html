@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>muntadher-rg</title>
+    <style>
+             body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            padding-top: 100px; /* Adjust the padding-top value as needed */
+        }
+
+        /* Styles for video background */
+        video#bgvid {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            min-width: 100%;
+            min-height: 100%;
+            width: auto;
+            height: auto;
+            z-index: -100;
+            transform: translateX(-50%) translateY(-50%);
+            background: url(polina.jpg) no-repeat;
+            background-size: cover;
+        }
+
+        /* Styles for navigation bar */
+        nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 1rem 0;
+            z-index: 999;
+        }
+
+        nav ul {
+            margin: 0;
+            padding: 0;
+            list-style-type: none;
+            text-align: center;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 1rem;
+        }
+
+        nav ul li a {
+            color: #b8a2dc;
+            text-decoration: none;
+            font-size: 1.2rem;
+        }
+
+        nav ul li a:hover {
+            color: lightgray;
+        }
+
+        /* Styles for content */
+        #polina {
+            font-family: Agenda-Light, Agenda Light, Agenda, Arial Narrow, sans-serif;
+            font-weight: 100;
+            background: rgba(0, 0, 0, 0.3);
+            color: white;
+            padding: 2rem;
+            width: 33%;
+            margin: 2rem;
+            float: right;
+            font-size: 1.2rem;
+        }
+
+        #polina h1 {
+            font-size: 3rem;
+            text-transform: uppercase;
+            margin-top: 0;
+            letter-spacing: .3rem;
+        }
+
+        #polina button {
+            display: block;
+            width: 80%;
+            padding: .4rem;
+            border: none;
+            margin: 1rem auto;
+            font-size: 1.3rem;
+            background: rgb(88, 88, 88);
+            color: rgb(0, 0, 0);
+            border-radius: 3px;
+            cursor: pointer;
+            transition: .3s background;
+        }
+
+        #polina button:hover {
+            background: rgba(0, 0, 0, 0.5);
+        }
+
+        #polina a {
+            display: inline-block;
+            color: #fff;
+            text-decoration: none;
+            background: rgba(0, 0, 0, 0.5);
+            padding: .5rem;
+            transition: .6s background;
+        }
+
+        #polina a:hover {
+            background: rgba(0, 0, 0, 0.9);
+        }
+
+        @media screen and (max-width: 500px) {
+            div {
+                width: 70%;
+            }
+        }
+
+        @media screen and (max-device-width: 800px) {
+            html {
+                background: url(https://thenewcode.com/assets/images/polina.jpg) #000 no-repeat center center fixed;
+            }
+
+            #bgvid {
+                display: none;
+            }
+        }
+
+        body {
+            background: rgb(0, 0, 0);
+            background-size: cover;
+            font-family: 'Trebuchet MS', sans-serif;
+        }
+
+        .container {
+            display: inline-block;
+            text-align: center;
+        }
+
+        .typed-out {
+            overflow: hidden;
+            border-right: .15em solid rgb(255, 255, 255);
+            white-space: nowrap;
+            animation: typing 1s forwards;
+            font-size: 1.6rem;
+            width: 0;
+            color: white;
+        }
+
+        /* Added margin-bottom to create spacing between divs */
+        .typed-out + .typed-out {
+            margin-top: 10px;
+        }
+
+        @keyframes typing {
+            from {
+                width: 0
+            }
+
+            to {
+                width: 100%
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    <video playsinline autoplay muted loop poster="polina.jpg" id="bgvid">
+        <source src="cybe o.mp4" type="video/webm">
+        <source src="https://vimeo.com/268580312" type="video/mp4">
+    </video>
+
+    <div id="polina">
+        <h1>cyberpunk</h1>
+        <p>made by muntadher-rg</p>
+        <p><a href="http://thenewcode.com/777/Create-Fullscreen-HTML5-Page-Background-Video">original article</a></p>
+        <p>In the neon-lit alleys of a dystopian metropolis, cyberpunk culture pulses with raw energy and defiance. Augmented humans and renegade hackers navigate the digital ether, their minds wired into cyberspace as they challenge the dominance of mega-corporations. Amidst the flickering .</p>
+        <p>neon lights and swirling smog, a rebellion brews, fueled by the desire for freedom and autonomy. In this high-tech, low-life existence, every keystroke is a weapon and every line of code a manifesto against oppression. Welcome to the cyberpunk underworld, where innovation thrives in the shadows of corporate tyranny.
+
+
+        </p>
+        <button>Pause</button>
+
+    </div>
+    <section>
+        <div class="container">
+            <div class="typed-out">#welcome to the real world</div>
+           
+        </div>
+    </section>
+</body>
+</html>
